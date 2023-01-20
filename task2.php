@@ -9,10 +9,15 @@ $number = "15253545";
 $checkNumber = '5';
 $count = 0;
 
+// decision 1
 for ($i = 0; $i < strlen($number); $i++) {
     if ($number[$i] == $checkNumber) {
         $count++;
     }
 }
 
+echo $count;
+
+// decision 2
+$count = substr_count($number, $checkNumber);
 echo $count;
